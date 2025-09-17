@@ -5,7 +5,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxalakzat13a.HelloController">
    <children>
       <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="300.0">
          <children>
@@ -13,7 +13,7 @@
                <children>
                   <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="150.0">
                      <children>
-                        <RadioButton mnemonicParsing="false" onAction="#onPirosSelected" text="Piros">
+                        <RadioButton id="piros" fx:id="piros" mnemonicParsing="false" onAction="#onPirosSelected" text="Piros">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -21,12 +21,12 @@
                               <ToggleGroup fx:id="colors" />
                            </toggleGroup>
                         </RadioButton>
-                        <RadioButton mnemonicParsing="false" onAction="#onZoldSelected" text="Zöld" toggleGroup="$colors">
+                        <RadioButton id="zold" fx:id="zold" mnemonicParsing="false" onAction="#onZoldSelected" text="Zöld" toggleGroup="$colors">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
                         </RadioButton>
-                        <RadioButton mnemonicParsing="false" onAction="#onKekSelected" text="Kék" toggleGroup="$colors">
+                        <RadioButton id="kek" fx:id="kek" mnemonicParsing="false" onAction="#onKekSelected" text="Kék" toggleGroup="$colors">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -35,7 +35,7 @@
                   </VBox>
                   <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="150.0">
                      <children>
-                        <RadioButton mnemonicParsing="false" text="Négyzet">
+                        <RadioButton id="negyzet" fx:id="negyzet" mnemonicParsing="false" onAction="#onNegyzetSelected" text="Négyzet">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -43,12 +43,12 @@
                               <ToggleGroup fx:id="shapes" />
                            </toggleGroup>
                         </RadioButton>
-                        <RadioButton mnemonicParsing="false" text="Kör" toggleGroup="$shapes">
+                        <RadioButton id="kor" fx:id="kor" mnemonicParsing="false" onAction="#onKorSelected" text="Kör" toggleGroup="$shapes">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
                         </RadioButton>
-                        <RadioButton mnemonicParsing="false" text="Háromszög" toggleGroup="$shapes">
+                        <RadioButton id="haromszog" fx:id="haromszog" mnemonicParsing="false" onAction="#onHaromszogSelected" text="Háromszög" toggleGroup="$shapes">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
